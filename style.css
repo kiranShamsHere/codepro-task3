@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 20px 0; */
+    background: #fff;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 150px;
+    height: 70px;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    color: white;
+    transition: 0.5s;
+}
+
+.nav ul li a:hover {
+    color: orangered;
+    transition: 0.5s;
+}
+
+.one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -50px;
+    flex-wrap: wrap;
+}
+
+.imgSec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 14%;
+    z-index: 000;
+    background: rgba(15, 15, 46, 0.89);
+    border-radius: 0 0 0px 100px;
+}
+
+.imgSec img {
+    z-index: 1000;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    backdrop-filter: blur(30px);
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.h1 {
+    font-size: 45px;
+    font-weight: 600;
+    color: navy;
+}
+
+.h1 span {
+    color: orangered;
+}
+
+.p {
+    color: rgba(15, 15, 46, 0.89);
+    font-size: 17px;
+    margin: 20px auto;
+}
+
+.one div {
+    margin: 30px auto;
+}
+
+.one div a {
+    /* width: 100%; */
+    background: orangered;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin: 30px 0;
+    transition: 0.2s ease-in-out;
+}
+
+.one div a:hover {
+    letter-spacing: 2px;
+    transition: 0.2s ease-in-out;
+}
+
+.two {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: navy;
+}
+
+.two div img {
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.two div img:hover {
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.two div div {
+    margin: 30px 0;
+}
+
+.two div div i {
+    font-size: 30px;
+    color: white;
+    background: orange;
+    margin-left: 0;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.two div div i:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+}
+
+.three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    /* flex-wrap: wrap; */
+    /* padding: 27px 12%; */
+}
+
+.three div {
+    width: 60%;
+}
+
+.three div div {
+    margin: 30px auto;
+}
+
+.three div div a {
+    /* width: 100%; */
+    background: orange;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.three div div a:hover {
+    letter-spacing: 2px;
+    transition: 0.2s ease-in-out;
+}
+
+.four {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    flex-wrap: wrap;
+    /* padding: 27px 12%; */
+    position: relative;
+}
+
+.four::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 40%;
+    z-index: 000;
+    background: rgba(15, 15, 46, 0.89);
+}
+
+.four .div {
+    position: relative;
+    top: -10px;
+}
+
+.four .div .div2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.four .div .div2 div {
+    width: 400px;
+    margin: 34px;
+    height: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.four .div .div2 div:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.four .div .div2 div h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: navy;
+    margin: 10px;
+}
+
+.four .div .div2 div p {
+    font-size: 15px;
+    color: rgba(15, 15, 46, 0.89);
+    margin: 5px;
+    text-align: center;
+}
+
+.five {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.five .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin: 20px 5px; */
+    padding: 20px;
+}
+
+.five fieldset {
+    width: 70%;
+    border-style: dashed;
+    border: 5px dashed rgba(0, 0, 0, 0.2);
+}
+
+.five legend {
+    color: navy;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.form-box {
+    width: 100%;
+    width: 500px;
+}
+
+.form-box .box {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.box div label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin: 20px 0;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px auto;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    outline: none;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: 17px;
+    background: rgba(15, 15, 46, 0.89);
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background: orange;
+    transition: 0.2s ease-in-out;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    background: rgba(15, 15, 46, 0.89);
+    padding: 10px;
+    color: white;
+}
+
+footer h3 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+
+    .imgSec::before {
+        display: none;
+    }
+
+    .one {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+        margin-top: 0px;
+        flex-wrap: wrap;
+    }
+
+    .imgSec img {
+        margin-right: 0;
+        width: 100%;
+        width: 350px;
+        height: 300px;
+    }
+
+    .h1 {
+        font-size: 30px;
+    }
+
+    .p {
+        color: rgba(15, 15, 46, 0.89);
+        font-size: 16px;
+        margin: 20px auto;
+    }
+
+
+    .two div img {
+        width: 350px;
+        height: 300px;
+    }
+
+    .two div div {
+        margin: 30px 0;
+    }
+
+    .two div div i {
+        font-size: 30px;
+        color: white;
+        background: orange;
+        margin-left: 0;
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+
+    .two div div i:hover {
+        transform: scale(1.2);
+        transition: 0.2s ease-in-out;
+    }
+
+    .h2 {
+        font-size: 25px;
+        font-weight: 600;
+        color: navy;
+    }
+
+    .two {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        flex-wrap: wrap;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .center .p {
+        font-size: 15px;
+        color: rgba(15, 15, 46, 0.89);
+        margin: 5px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .three {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .three div {
+        width: 90%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .four::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 20%;
+        z-index: 000;
+        background: rgba(15, 15, 46, 0.89);
+    }
+
+    .four .div {
+        position: relative;
+        top: 70px;
+    }
+
+    .four .div .div2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .four .div .div2 div {
+        width: 350px;
+        margin: 20px;
+        height: 300px;
+    }
+
+    .four .div .div2 div h2 {
+        font-size: 22px;
+        margin: 8px;
+    }
+
+    .four .div .div2 div p {
+        margin: 3px 5px;
+    }
+
+
+    .five {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin-top: 120px;
+        margin-bottom: 50px;
+    }
+
+    .five .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        /* margin: 20px 5px; */
+        padding: 10px;
+    }
+
+    .five fieldset {
+        width: 80%;
+        border-style: dashed;
+        border: 5px dashed rgba(0, 0, 0, 0.2);
+    }
+
+    .five legend {
+        color: navy;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .form-box {
+        width: 100%;
+        width: 300px;
+    }
+
+    .form-box .box {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .box div label {
+        font-size: 15px;
+        font-weight: 400;
+        color: #000;
+        margin: 20px 0;
+    }
+
+    input {
+        width: 100%;
+        outline: none;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    textarea {
+        width: 100%;
+        outline: none;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px auto;
+        resize: none;
+    }
+
+    .nav ul li a {
+        color: orange;
+    }
+
+    .nav ul li a:hover {
+        color: navy;
+    }
+
+}
